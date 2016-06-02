@@ -143,9 +143,9 @@ public class DemoPage01 extends JPanel implements ActionListener {
 		JSplitPane pSplit = new JSplitPane();
 		pSplit.setOrientation( SwingUtilities.VERTICAL);
 		pSplit.setContinuousLayout( true);
-		pSplit.setResizeWeight( 0.6);
+		pSplit.setResizeWeight( 0.4);
 		pSplit.setTopComponent( new JLabel( "some stuff in the left"));
-		pSplit.setBottomComponent( new JLabel( "some stuff in the right"));
+		pSplit.setBottomComponent( new JLabel( "some more stuff in the right"));
 		pRet.add( pSplit, BorderLayout.CENTER);
 		return( pRet);
 	}
