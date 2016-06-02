@@ -1,0 +1,33 @@
+# Copyright (c) 2016 Matt Samudio (Zenteknix)  All Rights Reserved.
+# Contact information for Zenteknix is available at http://www.zenteknix.com
+#
+# This file is part of JMergeTool.
+#
+# JMergeTool is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as
+# published by the Free Software Foundation, either version 3 of
+# the License, or (at your option) any later version.
+#
+# JMergeTool is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the
+# GNU Lesser General Public License along with JMergeTool.
+# If not, see <http://www.gnu.org/licenses/>.
+
+#!/bin/ksh
+PHD="${HOME}"
+LLD="/usr/local/lib"
+SLD="${PHD}/lib"
+#SLD="${LLD}"
+LCP="${LLD}/mysql.jar:${SLD}/jztx.jar:${SLD}/jmergetool.jar"
+PCN="com.ztx.jmergetool.App"
+#LAF="com.sun.java.swing.plaf.motif.MotifLookAndFeel"
+#LAF="com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+#LAF="javax.swing.plaf.nimbus.NimbusLookAndFeel"
+LAF="javax.swing.plaf.metal.MetalLookAndFeel"
+
+cd ${PHD}
+java -Dswing.defaultlaf=${LAF} -cp "${LCP}" ${PCN}
