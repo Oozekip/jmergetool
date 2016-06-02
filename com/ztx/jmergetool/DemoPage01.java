@@ -110,7 +110,7 @@ public class DemoPage01 extends JPanel implements ActionListener {
 		JPanel pRet = new JPanel( new GridBagLayout());
 		GridBagConstraints pGBC = null;
 		pGBC = new GridBagConstraints(); pGBC.gridx=0; pGBC.gridy=0;
-		pRet.add( new JLabel( "Powered by Java, copyright 2016 Zenteknix"), pGBC);
+		pRet.add( new JLabel( "So far, this is just a demo"), pGBC);
 		return( pRet);
 	}
 
@@ -145,7 +145,7 @@ public class DemoPage01 extends JPanel implements ActionListener {
 		pSplit.setContinuousLayout( true);
 		pSplit.setResizeWeight( 0.4);
 		pSplit.setTopComponent( new JLabel( "some stuff in the left"));
-		pSplit.setBottomComponent( new JLabel( "some more stuff in the right"));
+		pSplit.setBottomComponent( new JLabel( "other stuff in the right"));
 		pRet.add( pSplit, BorderLayout.CENTER);
 		return( pRet);
 	}
